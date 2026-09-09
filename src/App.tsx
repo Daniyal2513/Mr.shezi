@@ -1,5 +1,14 @@
 import { useState, useEffect, useRef, createContext, useContext } from "react";
-import logo from "@/imports/69eda8bb-f10b-47bb-9fe5-36135aafa385__1_.png";
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      [elementName: string]: any;
+    }
+  }
+}
+
+const logo = "/imports/69eda8bb-f10b-47bb-9fe5-36135aafa385__1_.png";
 
 // ─── Theme context ─────────────────────────────────────────────────────────────
 const ThemeCtx = createContext<{ dark: boolean; toggle: () => void }>({ dark: true, toggle: () => {} });
