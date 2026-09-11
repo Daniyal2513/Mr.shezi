@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, createContext, useContext } from "react";
 
-import logo from "./assets/logo.png";
+import logo from "./assets/logo2.png";
 
 // ─── Theme context ─────────────────────────────────────────────────────────────
 const ThemeCtx = createContext<{ dark: boolean; toggle: () => void }>({ dark: true, toggle: () => {} });
