@@ -199,7 +199,7 @@ function Navbar({ cartCount, cartTotal, onCartClick }: { cartCount: number; cart
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navBg}`}>
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between gap-4">
         <a href="#home">
-          <img src={logo} alt="" className={`object-contain transition-all ${scrolled ? "h-20" : "h-14"}`} />
+        <img src={logo} alt="" style={{ height: '98px', width: 'auto', display: 'block' }} />
         </a>
         <nav className="hidden lg:flex items-center gap-6">
           {links.map(l => (
